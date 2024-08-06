@@ -34,7 +34,7 @@ const Menu = () => {
         <div key={category}>
           {drinks.map((drink: IProduct, index: number) => (
             <div className="drink" key={index}>
-              <h3>{drink.name}</h3>
+              <h3 className="drink-name">{drink.name}</h3>
               <h3 className="price">{drink.price}</h3>
               <div className="counter">
                 <button onClick={() => handleDecrement(drink)}>-</button>
@@ -58,7 +58,9 @@ const Menu = () => {
           <div>
             {Object.entries(counter).map(([name, count]) => (
               <div key={name}>
-                <h3>{name}: {count}</h3>
+                <h3>
+                  {name}: {count}
+                </h3>
               </div>
             ))}
           </div>
@@ -66,7 +68,6 @@ const Menu = () => {
       </div>
       <br />
       <h2>TOTAL: {totalPrice}</h2>
-      
     </main>
   );
 };
