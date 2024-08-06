@@ -1,0 +1,18 @@
+.drink {
+    display: grid;
+    grid-template-columns: 80% 10% 10%;
+    max-width: 500px;
+}
+
+.counter {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.counter button {
+    color: rgba(222, 122, 34, 0.87);
+    background-color: transparent;
+    border: 1px solid  rgba(222, 122, 34, 0.87);
+    border-radius: 0.1rem;
+}
